@@ -1,0 +1,89 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="정보가 존재하지 않습니다"
+            android:textColor="#080808" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_recycler_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/mov_margin_right"
+        android:layout_marginBottom="260dp"
+        android:src="@drawable/lotte"
+        android:elevation="6dp"
+        android:id="@+id/mov_lc"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/mov1_color"
+        android:visibility="invisible">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/mov_margin_right"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/megabox"
+        android:elevation="6dp"
+        android:id="@+id/mov_mb"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/mov1_color"
+        android:visibility="invisible">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/mov_margin_right"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/cgv"
+        android:elevation="6dp"
+        android:id="@+id/mov_cgv"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/mov1_color"
+        android:visibility="invisible">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/mov_margin_right"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/add_plus_button"
+        android:elevation="6dp"
+        android:id="@+id/mov_plus"
+        app:pressedTranslationZ="12dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
